@@ -6,7 +6,6 @@
 ILLEGAL_FILES=(.DS_Store .localized .DS_Store? ._* .Spotlight-V100 .Trashes Thumbs.db ehthumbs.db desktop.ini)
 ILLEGAL_FILES+=(*.pyc *.pyo *.exe *.dll *.so *.a *.o *.obj *.lib)
 ILLEGAL_FILES+=(__pycache__ *.class *.jar *.war *.rar)
-ILLEGAL_FILES+=(*.sqlite *.sqlite3 *.sqlite-journal *.db *.db-journal)
 
 failed=0
 for file in "${ILLEGAL_FILES[@]}"; do

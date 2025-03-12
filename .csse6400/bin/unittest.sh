@@ -2,6 +2,8 @@
 #
 # Copy the tests directory and run the tests
 
-poetry install
+cp -r .csse6400/tests .
+
+poetry install --no-root
 poetry run python3 -m unittest discover -s tests
 
